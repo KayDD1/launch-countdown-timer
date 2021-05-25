@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+:root {
+  --greyishBlue: hsl(237, 18%, 59%);
+  --softRed: hsl(345, 95%, 68%);
+  --neutralWhite: hsl(0, 0%, 100%);
+  --darkDesaturatedBlue: hsl(236, 21%, 26%);
+  --veryDarkBlue: hsl(235, 16%, 14%);
+  --veryDark-Mostly-BlackBlue: hsl(234, 17%, 12%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 14px;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--veryDark-Mostly-BlackBlue);
+  background-image: url('./images/bg-stars.svg');
+  background-size: cover;
+}
+.countdown {
+  width: 100%;
+  height: 100vh;
+  background-image: url('./images/pattern-hills.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+}
+.countdown h1 {
+  text-align: center;
+  color: var(--neutralWhite);
+  padding-top: 120px;
+  text-transform: uppercase;
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.timer {
+  margin: 1rem;
+}
+
+.timer p {
+  padding: 1rem;
+  background-color: var(--darkDesaturatedBlue);
+  font-size: 24px;
+  color: var(--softRed);
+}
+.timer h3 {
+  margin-top: 0.3rem;
+  color: var(--neutralWhite);
+  text-align: center;
+  font-size: smaller;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+}
+
+.socials ul {
+  display: flex;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.socials ul li {
+  list-style: none;
+  margin: 1rem;
+  cursor: pointer;
+}
+.socials ul li:hover {
+  background-color: var(--softRed);
+}
+ul li img {
+  width: 40px;
+  height: 40px;
+}
